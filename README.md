@@ -61,3 +61,4 @@ EFI
 
 ----USBInjectAll.kext (Inject USB port)
 
+-Microsoft (Windows 10 Boot Manager) 
