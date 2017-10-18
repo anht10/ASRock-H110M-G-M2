@@ -1,6 +1,8 @@
 # ASRock-H110M-G-M2
 
+
 Phân vùng EFI dùng cho mainboard ASRock H110M-G/M.2
+
 Cấu hình:
 * Mainboard: ASRock H110M-G/M.2
 * CPU: Intel i3-7100
