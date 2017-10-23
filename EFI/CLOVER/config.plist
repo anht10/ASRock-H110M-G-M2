@@ -127,21 +127,7 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>Rename SAT0 to SATA</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					U0FUMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					U0FUQQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename HDAS to HDEF</string>
+					<string>change HDAS to HDEF</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -155,21 +141,21 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename _OSI to XOSI</string>
+					<string>change SAT0 to SATA</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X09TSQ==
+					U0FUMA==
 					</data>
 					<key>Replace</key>
 					<data>
-					WE9TSQ==
+					U0FUQQ==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename PEGP to GFX0</string>
+					<string>change PEGP to GFX0</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -183,16 +169,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename _DSM to XDSM</string>
+					<string>change HECI to IMEI</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X0RTTQ==
+					SEVDSQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					WERTTQ==
+					SU1FSQ==
 					</data>
 				</dict>
 			</array>
@@ -253,9 +239,9 @@
 			<key>Generate</key>
 			<dict>
 				<key>CStates</key>
-				<true/>
+				<false/>
 				<key>PStates</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 	</dict>
@@ -270,21 +256,19 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>darkwake=10 kext-dev-mode=1</string>
+		<string>darkwake=10 kext-dev-mode=1 shikigva=4</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
 		<key>DefaultVolume</key>
-		<string>Macintosh HD</string>
+		<string>Preboot</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>NeverDoRecovery</key>
 		<true/>
 		<key>Timeout</key>
-		<integer>5</integer>
-		<key>XMPDetection</key>
-		<string>Yes</string>
+		<integer>10</integer>
 	</dict>
 	<key>BootGraphics</key>
 	<dict>
@@ -343,6 +327,8 @@
 				</data>
 			</dict>
 		</array>
+		<key>#AirportBridgeDeviceName</key>
+		<string>RP02</string>
 		<key>#Arbitrary</key>
 		<array>
 			<dict>
@@ -497,6 +483,8 @@
 				<string>01:00:00</string>
 			</dict>
 		</array>
+		<key>#DisableFunctions</key>
+		<string>0x18F6</string>
 		<key>#FakeID</key>
 		<dict>
 			<key>#ATI</key>
@@ -539,8 +527,10 @@
 		</dict>
 		<key>USB</key>
 		<dict>
+			<key>AddClockID</key>
+			<true/>
 			<key>FixOwnership</key>
-			<false/>
+			<true/>
 			<key>Inject</key>
 			<true/>
 		</dict>
@@ -669,8 +659,9 @@
 		<false/>
 		<key>Hide</key>
 		<array>
-			<string>Data</string>
 			<string>Windows</string>
+			<string>Data</string>
+			<string>macOS</string>
 		</array>
 		<key>Language</key>
 		<string>en:0</string>
@@ -678,17 +669,6 @@
 		<dict>
 			<key>Enabled</key>
 			<false/>
-		</dict>
-		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<false/>
-			<key>Linux</key>
-			<false/>
-			<key>Tool</key>
-			<true/>
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1366x768</string>
@@ -775,6 +755,11 @@
 		</array>
 		<key>#FakeCPUID</key>
 		<string>0x010676</string>
+		<key>#ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\AMD6000Controller.kext</string>
+			<string>\System\Library\Extensions\AMDFramebuffer.kext</string>
+		</array>
 		<key>#KextsToPatch</key>
 		<array>
 			<dict>
@@ -868,25 +853,6 @@
 		<false/>
 		<key>KernelPm</key>
 		<false/>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=
-				</data>
-				<key>Name</key>
-				<string>com.apple.iokit.IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
-			</dict>
-		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -1013,15 +979,15 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM183.88Z.0151.B00.1708080034</string>
+		<string>IM181.88Z.0151.B00.1708080034</string>
 		<key>Board-ID</key>
-		<string>Mac-77F17D7DA9285301</string>
+		<string>Mac-4B682C642B45593E</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
-		<string>iMac18,2</string>
+		<string>iMac18,1</string>
 		<key>ChassisAssetTag</key>
 		<string>iMac-Aluminum</string>
 		<key>ChassisManufacturer</key>
@@ -1043,7 +1009,7 @@
 		<key>PlatformFeature</key>
 		<string>0x00</string>
 		<key>ProductName</key>
-		<string>iMac18,2</string>
+		<string>iMac18,1</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
