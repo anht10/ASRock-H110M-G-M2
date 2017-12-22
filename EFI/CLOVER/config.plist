@@ -23,9 +23,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>SERBUw==</data>
+					<data>
+					SERBUw==
+					</data>
 					<key>Replace</key>
-					<data>SERFRg==</data>
+					<data>
+					SERFRg==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -33,9 +37,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>SEVDSQ==</data>
+					<data>
+					SEVDSQ==
+					</data>
 					<key>Replace</key>
-					<data>SU1FSQ==</data>
+					<data>
+					SU1FSQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -43,9 +51,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>U0FUMA==</data>
+					<data>
+					U0FUMA==
+					</data>
 					<key>Replace</key>
-					<data>U0FUQQ==</data>
+					<data>
+					U0FUQQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -53,9 +65,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X0RTTQ==</data>
+					<data>
+					X0RTTQ==
+					</data>
 					<key>Replace</key>
-					<data>WERTTQ==</data>
+					<data>
+					WERTTQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -63,9 +79,27 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X09TSQ==</data>
+					<data>
+					X09TSQ==
+					</data>
 					<key>Replace</key>
-					<data>WE9TSQ==</data>
+					<data>
+					WE9TSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change LPC to LPCB</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					TFBDXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					TFBDQg==
+					</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -76,6 +110,18 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>CpuPm</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>Cpu0Ist</string>
 			</dict>
 		</array>
 		<key>HaltEnabler</key>
@@ -96,11 +142,11 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>darkwake=10 kext-dev-mode=1 shikigva=12</string>
+		<string>darkwake=10 kext-dev-mode=1 shikigva=14</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
+		<string>macOS</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>NeverDoRecovery</key>
@@ -122,7 +168,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>11</string>
+			<string>3</string>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -138,12 +184,6 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>Hide</key>
-		<array>
-			<string>Windows</string>
-			<string>Data</string>
-			<string>Preboot</string>
-		</array>
 		<key>Language</key>
 		<string>en:0</string>
 		<key>Mouse</key>
@@ -157,6 +197,8 @@
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
+		<key>Theme</key>
+		<string>tonymacx86</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -198,9 +240,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>v2ltcmS+LAEAAA==</data>
+					<data>
+					v2ltcmS+LAEAAA==
+					</data>
 					<key>Replace</key>
-					<data>v25tcmS+LAEAAA==</data>
+					<data>
+					v25tcmS+LAEAAA==
+					</data>
 					<key>Section</key>
 					<string>NDRMI</string>
 					<key>Skip</key>
@@ -214,9 +260,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>v2ltcmS+kAEAAA==</data>
+					<data>
+					v2ltcmS+kAEAAA==
+					</data>
 					<key>Replace</key>
-					<data>v25tcmS+kAEAAA==</data>
+					<data>
+					v25tcmS+kAEAAA==
+					</data>
 					<key>Section</key>
 					<string>NDRMI</string>
 					<key>Skip</key>
@@ -230,9 +280,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>v2N2YXG+kAEAAA==</data>
+					<data>
+					v2N2YXG+kAEAAA==
+					</data>
 					<key>Replace</key>
-					<data>v252YXG+kAEAAA==</data>
+					<data>
+					v252YXG+kAEAAA==
+					</data>
 					<key>Section</key>
 					<string>NSTREAM</string>
 					<key>Skip</key>
@@ -246,9 +300,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>v2N2YWO+kAEAAA==</data>
+					<data>
+					v2N2YWO+kAEAAA==
+					</data>
 					<key>Replace</key>
-					<data>v252YWO+kAEAAA==</data>
+					<data>
+					v252YWO+kAEAAA==
+					</data>
 					<key>Section</key>
 					<string>NSTREAM</string>
 					<key>Skip</key>
@@ -262,9 +320,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>v2N2YWW+kAEAAA==</data>
+					<data>
+					v2N2YWW+kAEAAA==
+					</data>
 					<key>Replace</key>
-					<data>v252YWW+kAEAAA==</data>
+					<data>
+					v252YWW+kAEAAA==
+					</data>
 					<key>Section</key>
 					<string>NSTREAM</string>
 					<key>Skip</key>
@@ -278,9 +340,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>v2N2YXq+kAEAAA==</data>
+					<data>
+					v2N2YXq+kAEAAA==
+					</data>
 					<key>Replace</key>
-					<data>v252YXq+kAEAAA==</data>
+					<data>
+					v252YXq+kAEAAA==
+					</data>
 					<key>Section</key>
 					<string>NSTREAM</string>
 					<key>Skip</key>
@@ -301,9 +367,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>x8ABAAAAD6I=</data>
+					<data>
+					x8ABAAAAD6I=
+					</data>
 					<key>Replace</key>
-					<data>x8DCBgIAkJA=</data>
+					<data>
+					x8DCBgIAkJA=
+					</data>
 					<key>Section</key>
 					<string>FCPUID</string>
 					<key>Skip</key>
@@ -326,9 +396,13 @@
 					<key>Count</key>
 					<integer>5</integer>
 					<key>Find</key>
-					<data>x8ABAAAAD6I=</data>
+					<data>
+					x8ABAAAAD6I=
+					</data>
 					<key>Replace</key>
-					<data>x8DCBgIAkJA=</data>
+					<data>
+					x8DCBgIAkJA=
+					</data>
 					<key>Section</key>
 					<string>FCPUID</string>
 					<key>Skip</key>
@@ -351,9 +425,13 @@
 					<key>Count</key>
 					<integer>2</integer>
 					<key>Find</key>
-					<data>x8ABAAAAD6I=</data>
+					<data>
+					x8ABAAAAD6I=
+					</data>
 					<key>Replace</key>
-					<data>x8DCBgIAkJA=</data>
+					<data>
+					x8DCBgIAkJA=
+					</data>
 					<key>Section</key>
 					<string>FCPUID</string>
 					<key>Skip</key>
@@ -374,9 +452,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>Zm9yY2VPZmY=</data>
+					<data>
+					Zm9yY2VPZmY=
+					</data>
 					<key>Replace</key>
-					<data>YXZvaWRPZmY=</data>
+					<data>
+					YXZvaWRPZmY=
+					</data>
 					<key>Section</key>
 					<string>OFFLINE</string>
 					<key>Segment</key>
@@ -392,9 +474,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>aHdlQkdSQQ==</data>
+					<data>
+					aHdlQkdSQQ==
+					</data>
 					<key>Replace</key>
-					<data>c3dlQkdSQQ==</data>
+					<data>
+					c3dlQkdSQQ==
+					</data>
 					<key>Section</key>
 					<string>BGRA</string>
 					<key>Segment</key>
@@ -410,9 +496,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>AA==</data>
+					<data>
+					AA==
+					</data>
 					<key>Replace</key>
-					<data>AA==</data>
+					<data>
+					AA==
+					</data>
 					<key>Section</key>
 					<string>NVDA</string>
 					<key>Segment</key>
@@ -428,9 +518,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>AGtlMQA=</data>
+					<data>
+					AGtlMQA=
+					</data>
 					<key>Replace</key>
-					<data>AHZlMQA=</data>
+					<data>
+					AHZlMQA=
+					</data>
 					<key>Section</key>
 					<string>KEGVA</string>
 					<key>Segment</key>
@@ -446,9 +540,13 @@
 					<key>Count</key>
 					<integer>1</integer>
 					<key>Find</key>
-					<data>Ym9hcmQtaWQA</data>
+					<data>
+					Ym9hcmQtaWQA
+					</data>
 					<key>Replace</key>
-					<data>c2hpa2ktaWQA</data>
+					<data>
+					c2hpa2ktaWQA
+					</data>
 					<key>Section</key>
 					<string>BOARDID</string>
 					<key>Segment</key>
@@ -679,8 +777,6 @@
 		<string>0x00</string>
 		<key>ProductName</key>
 		<string>iMac18,1</string>
-		<key>SmUUID</key>
-		<string>E88D1EA0-EC0C-4AEB-AA89-B7E51D267154</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
